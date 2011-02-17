@@ -1,0 +1,7 @@
+from django.conf.urls.defaults import *
+
+urlpatterns = patterns('',
+    ('^upload/$', 'myproject.upload.views.upload'),
+    ('^success/$', 'myproject.upload.views.success'),
+    ('^$', 'myproject.upload.views.hello'),
+)

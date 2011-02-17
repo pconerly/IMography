@@ -1,0 +1,16 @@
+<root>
+  <date count="1671">2011, 27</date>
+  <date count="51">2011, 28</date>
+  <date count="42">2011, 29</date>
+  <date count="955">2011, 30</date>
+  <date count="860">2011, 31</date>
+  <date count="0">2011, 33</date>
+  <date count="28">2011, 34</date>
+  <date count="236">2011, 35</date>
+  <date count="1604">2011, 37</date>
+  <date count="7">2011, 38</date>
+  <date count="158">2011, 42</date>
+  <date count="1277">2011, 43</date>
+  <date count="753">2011, 44</date>
+  <date count="498">2011, 47</date>
+</root>

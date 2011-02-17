@@ -1,0 +1,15 @@
+<html>
+<body>
+<head>
+<title>IMography</title>
+</head>
+<body>
+<p>Word count, per day, between {{ log.local }} and {{ log.remote }}</p>
+<p>Between the years {{ log.startyear }} and {{log.stopyear}} (one line per year).</p>
+<p>The bars are based off the max words ever exchanged on a day, which was {{ log.max }}.</p>
+<img src="/static/images/{{log.hash}}.png"/>
+<p>The total words exchanged in this log was {{log.total}}</p>
+<p><a href="/upload/">Upload another log!</a></p>
+<p><a href="/">Back to the homepage</a></p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<html>
+<body>
+<p>Please upload a file!</p>
+<form enctype="multipart/form-data" action="/upload/" method="post">{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="Submit" />
+</form>
+</body>
+</html>
