@@ -1,9 +1,16 @@
 <html>
+
 <body>
-<p>Please upload a file!</p>
+
+<p>Upload a file!</p>
+
 <form enctype="multipart/form-data" action="/upload/" method="post">{% csrf_token %}
 {{ form.as_p }}
 <input type="submit" value="Submit" />
+
 </form>
+
+<p>The messages in your logs are not saved, only the word count for each day.  Additionally your IM graphic will be hidden behind a hashed url- which makes it easy to share with your friends, but nearly impossible for the rest of the internet to find.</p>
 </body>
+
 </html>

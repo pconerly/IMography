@@ -124,15 +124,20 @@ def plot_sparkline(chat, log, height = 100, width = 2):
         Reminder of the format of chat:
         chat[i][0].tm_year, chat[i][0].tm_yday, chat[i][1] is count
     """
-    im = Image.new("RGB", (366*width, ((log.stopyear - log.startyear + 1) * height) + 2), 'white')
+    h = ((log.stopyear - log.startyear + 1) * height) + 2
+    im = Image.new("RGB", (366*width, h), 'white')
     draw = ImageDraw.Draw(im)
     color = "red"
     font = ImageFont.truetype("/usr/share/fonts/third-party-fonts-1.0/arial.ttf", 15)
+    #draw a grey box around it
+    draw.line((0, 0, 366*width, 0), fill="gray")
+    draw.line((0, 0, 0, h-1), fill="gray")
+    draw.line((366*width-1, 0, 366*width-1, h-1), fill="gray")
     for i in range(log.stopyear - log.startyear + 1):
         draw.line((0, height*(i+1)+1,
                   366*width,height*(i+1)+1),
                   fill="gray")        
-        draw.text((10, 10), str(log.startyear + i), font=font, fill='gray')
+        draw.text((10, (height*i)+10), str(log.startyear + i), font=font, fill='gray')
     for i in xrange(len(chat)):
         draw.line((width*chat[i][0].tm_yday - 1,
                    height*(chat[i][0].tm_year - log.startyear + 1),
