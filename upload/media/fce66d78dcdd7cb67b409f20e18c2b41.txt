@@ -1,9 +1,0 @@
-<collection>
-<meta>
-  <comic title="Sandman" number='62'>
-    <writer>Neil Gaiman</writer>
-    <penciller pages='1-9,18-24'>Glyn Dillon</penciller>
-    <penciller pages="10-17">Charles Vess</penciller>
-    <penciller pages="18-24">Patrick Morgan</penciller>
-  </comic>
-</collection>
